@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      #startArea {
+        width: 33%;
+        float: left;
+        height: 725px;
+        background-color: black;
+        /* vertical-align: middle; */
+      }
+      #p1Section {
+        width: 33%;
+        float: left;
+        background-color: blue;
+        height: 725px;
+      }
+      #p2Section {
+        width: 33%;
+        float: left;
+        background-color: red;
+        height: 725px;
+      }
+      .score {
+        margin-top: 10px;
+        padding: 30px;
+        width: 90%;
+        color: black;
+        background-color: aliceblue;
+        border-radius: 25px;
+      }
+      body {
+        margin: 0px;
+      }
+      .points {
+        font-size: 100px;
+      }
+      .centered {
+        margin-top: 20px;
+        padding: 30px;
+        width: 90%;
+        border-radius: 25px;
+      }
+      .centered:hover {
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 30px;
+        width: 90%;
+      }
+      #gifSection {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="p1Section">
+      <center>
+        <h1 class="score">Player Points:</h1>
+        <span class="points" id="humanPoints"></span>
+      </center>
+    </div>
+    <div id="startArea">
+      <center>
+        <button class="centered" id="button">START</button>
+        <div><img src="" alt="" id="gifSection" /></div>
+      </center>
+    </div>
+    <div id="p2Section">
+      <center>
+        <h1 class="score">Computer Points:</h1>
+        <span class="points" id="computerPoints"></span>
+      </center>
+    </div>
+  </body>
+</html>
